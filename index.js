@@ -7,14 +7,13 @@ let answers = [];
 // Dom elements called
 let startQuiz = document.querySelector("#startQuiz");
 let submitQuiz = document.querySelector("#submit");
-// console.log(submitQuiz);
-
 let rulesContainer = document.querySelector("#rulesContainer");
 let alertContainer = document.querySelector("#alertContainer");
 let submitContainer = document.querySelector("#submitContainer");
 let quizContainer = document.querySelector("#quizContainer");
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
+let blog_btn = document.querySelector("#blog_btn");
 
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
@@ -186,6 +185,12 @@ submitQuiz.addEventListener("click", function () {
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
+});
+
+// Event listener for blog button
+blog_btn.addEventListener("click", function () {
+  location.href = "blog.html";
+  console.log("clicked");
 });
 
 // =========end==========
